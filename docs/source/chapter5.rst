@@ -75,3 +75,23 @@ This system is used by all Debian-derived distributions ,including Debian, Ubunt
 There are other package management systems, such as portage/emerge used by Gentoo, pacman used by Arch, and specialized ones used by Embedded Linux systems and Android.
 
 Another ancient system is just to supply packages as tarballs without any real management or clean removal strategies; this approach still marks Slackware, one of the oldest Linux distributions.
+
+Chapter 5.7 Packaging Tool Levels and Variables
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+There are two levels to packaging systems:
+
+1. Low Level Utility
+	This simply installs or removes a single package, or a list of packages, each one of which is individually and specifically named. Dependencies are not fully handled, only warned about:
+	- If another package needs to be installed, first installation will fail.
+	- If the package is needed by another package, removal will fail.
+
+The rpm and dpkg utilities play this role for the packaging systems that use them.
+
+2. High Level Utility
+	This solves the dependency problems:
+		- If another package or group of packages needs to be installed before software can be installed, such needs will be satisfied.
+		- If removing a package interferes with another installed package, the administrator will be given the choice of either aborting, or removing all affected software.
+
+The yum, dnf, and zypper utilities (and more recently, PackageKit) take care of the dependency resolution for rpm systems, and apt-get and apt-cache and other utilities take care of it for dpkg systems.
+In this course, we will only discuss the command line interface to the packaging systems; while the graphical frontends used by each Linux distribution can be useful, we would like to be less tied to any one interface and have more flexibility. 
