@@ -121,4 +121,41 @@ Anything that can be scripted.
 We will not discuss mechanisms of how to build .rpm or .deb packages, as that is a question mostly for developers, rather than administrators. 
 
 
+Chapter 5.10 Revision Control Systems
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Software projects become more complex to manage as either the size of it increases or as more devs become involved
+In order to organize updates and allow co-operation many different schemes are available for source control. Standard features should include, accurate history, log, backups, show conflicts et.
+
+RCS fills the role of coordinating cooperative development
+
+
+Chapter 5.12 The Linux Kernel and the Birth of git
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The Linux kernel development system has special needs in that it is widely distributed throughout the world, with literally thousands of developers involved. Furthermore it is all done very publicly, under the GPL license.
+
+For a long time, there was no real source revision control system. Then, major kernel developers went over to the use of BitKeeper (see http://www.bitkeeper.com), a commercial project which granted a restricted use license for Linux kernel development.
+
+However, in a very public dispute over licensing restrictions in the spring of 2005, the free use of BitKeeper became unavailable for Linux kernel development.
+
+
+Chapter 5.13 How git Works...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Technically, git is not a source control management system in the usual sense and teh basic units it works with are not files. It has two important data structures: an object database and a directory cache.
+
+The object database contains objects of three varieties:
+
+1. Blobs:
+	- Chunks of binary data containg file contents
+
+2. Trees:
+	- Sets of blobs including file names and attributes, giving the directory structure
+
+3. Commits:
+	- Changesets describing tree snapshots
+
+The directory cache captures the state of the directory tree.
+
+By liberating the controls system from a file-by-file-based system, one is better able to handle changesets which involve many files.
