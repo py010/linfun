@@ -97,10 +97,28 @@ The yum, dnf, and zypper utilities (and more recently, PackageKit) take care of 
 In this course, we will only discuss the command line interface to the packaging systems; while the graphical frontends used by each Linux distribution can be useful, we would like to be less tied to any one interface and have more flexibility. 
 
 
-Chapter 5.8 Packaging Tool Levels and Variables
+Chapter 5.8 Package Sources
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-test commit, this is restart
+Every distrib has one or more package repo where system utils go to get software or update to new versions. It is the job of the distib to ensure all packages work well with each other
+
+There are always other external repos which can be added to the standard list. ie: EPEL (Extra Packages for Enterprise Linux) as their source is Fedora and maintainers are close to Red Hat
+
+However, some ext repos may not be so well maintained or constructed which can lead to complications with dependancies, aka Dependancy Hell
+
+
+Chapter 5.9 Creating Package Sources
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Building your own custom software packages makes it easy to distribute and install your own software. Almost every version of Linux has some mechanism for doing this.
+
+Building your own package allows you to control exactly what goes in the software and exactly how it is installed. You can create the package so that installing it runs scripts that perform all tasks needed to install the new software and/or remove the old software, such as:
+
+Creating needed symbolic links
+Creating directories as needed
+Setting permissions
+Anything that can be scripted.
+We will not discuss mechanisms of how to build .rpm or .deb packages, as that is a question mostly for developers, rather than administrators. 
 
 
 
