@@ -95,3 +95,12 @@ The rpm and dpkg utilities play this role for the packaging systems that use the
 
 The yum, dnf, and zypper utilities (and more recently, PackageKit) take care of the dependency resolution for rpm systems, and apt-get and apt-cache and other utilities take care of it for dpkg systems.
 In this course, we will only discuss the command line interface to the packaging systems; while the graphical frontends used by each Linux distribution can be useful, we would like to be less tied to any one interface and have more flexibility. 
+
+
+Chapter 5.7 Packaging Tool Levels and Variables
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test commit
+
+
+
