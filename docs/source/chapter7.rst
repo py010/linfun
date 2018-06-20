@@ -50,6 +50,7 @@ Shows all files, file sizes and total size
 Chapter 7.6 DPKG Queries
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
+Grid table:
 
 +-------------------------------------+
 |     desired action 	  |    cmd    |
