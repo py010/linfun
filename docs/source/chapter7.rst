@@ -55,12 +55,37 @@ Chapter 7.6 DPKG Queries
    :header: "cmd", "desired outcome"
    :widths: 30, 50
 
-   "``dpkg -l``", "List all packages installed"
-   "``dpkg -L wget``", "List files in the wget package"
-   "``dpkg -s wget``", "Show info about an installed package"
-   "``dpkg dpkg -I webfs_1.21+ds1-8_amd64.deb``", "Show info about a package file"
-   "``dpkg -c webfs_1.21+ds1-8_amd64.deb``", "List files in a package file"
+   "``$ dpkg -l``", "List all packages installed"
+   "``$ dpkg -L wget``", "List files in the wget package"
+   "``$ dpkg -s wget``", "Show info about an installed package"
+   "``$ dpkg dpkg -I webfs_1.21+ds1-8_amd64.deb``", "Show info about a package file"
+   "``$ dpkg -c webfs_1.21+ds1-8_amd64.deb``", "List files in a package file"
    "``$ dpkg -S /etc/init/networking.conf``", "Show what package owns /etc/init/networking.conf"
-   "``dpkg -s wget``", "Show the status of a package"
-   "``dpkg -V package``", "Verify the istalled packages integrity"
+   "``$ dpkg -s wget``", "Show the status of a package"
+   "``$ dpkg -V package``", "Verify the installed packages integrity"
+
+Chapter 7.7 Installing/Upgrading/Uninstalling Packages
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The command:
+	
+	``$ sudo dpkg -i foobar.deb``
+
+would be used for either installing or upgrading the foobar package.
+
+If the package is not currently installed then it will be installed. If the package is newer than the one currently installed then it will be upgraded.
+
+The command:
+
+	``$ sudo dpkg -r package``
+
+is used to remove all of an installed package except for its configuration files.
+
+The command:
+
+	``$ sudo dpkg -P package``
+
+is used to remove all of an installed package including its config files (Note that -P stands for purge)
+
+
 
