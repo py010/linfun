@@ -50,33 +50,17 @@ Shows all files, file sizes and total size
 Chapter 7.6 DPKG Queries
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Grid table:
 
-+-------------------------------------+
-|     desired action 	  |    cmd    |
-+=====================================+
-|List all packages 		  | $ dpkg -l |
-+-------------------------+-----------+
-| 	6					  |           |
-+-------------------------+-----------+
-| 	8					  |           |
-+-------------------------+-----------+
-| 						  |           |
-+-------------------------+-----------+
-| 						  |           |
-+-------------------------+-----------+
-| 						  |           |
-+-------------------------+-----------+
-| 						  |           |
-+-------------------------+-----------+
-| 						  |           |
-+-------------------------+-----------+
-
-
-.. csv-table:: a title
+.. csv-table:: DPKG QUERIES
    :header: "cmd", "desired outcome"
    :widths: 30, 50
 
-   "dpkg -l", "List all packages installed"
-   "dpkg -L wget", "List files in the wget package"
+   "``dpkg -l``", "List all packages installed"
+   "``dpkg -L wget``", "List files in the wget package"
+   "``dpkg -s wget``", "Show info about an installed package"
+   "``dpkg dpkg -I webfs_1.21+ds1-8_amd64.deb``", "Show info about a package file"
+   "``dpkg -c webfs_1.21+ds1-8_amd64.deb``", "List files in a package file"
+   "``$ dpkg -S /etc/init/networking.conf``", "Show what package owns /etc/init/networking.conf"
+   "``dpkg -s wget``", "Show the status of a package"
+   "``dpkg -V package``", "Verify the istalled packages integrity"
 
