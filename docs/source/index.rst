@@ -10,6 +10,7 @@ SYS ADMIN:
     :maxdepth: 2
     chapter5
     chapter6
+    chapter7
     license
     help
 
