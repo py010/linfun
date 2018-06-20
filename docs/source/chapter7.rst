@@ -27,3 +27,12 @@ on Debian, and
 logrotate_3.8.7-1ubuntu1_amd64.deb
 
 on Ubuntu. Note that, for historical reasons, the 64-bit x86 platform is called amd64 rather than x86_64, and distributors such as Ubuntu manage to insert their name in the package name.
+
+Chapter 7.5 Source Packages I
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In the Debian packaging system, a source package consists of at least three files:
+
+	1. An upstream tarball, ending with .tar.gz. This is the unmodified source as it comes from the package maintainers
+	2. A description file, ending with .dsc, containing the package name and other metadata, such as architecture and dependencies
+	3. A second tarball that contains any patches to the upstream source and additional files created for the package and ends with a name .debian.tar.gz or .diff.gz depending on the distro
