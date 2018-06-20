@@ -35,4 +35,14 @@ In the Debian packaging system, a source package consists of at least three file
 
 	1. An upstream tarball, ending with .tar.gz. This is the unmodified source as it comes from the package maintainers
 	2. A description file, ending with .dsc, containing the package name and other metadata, such as architecture and dependencies
-	3. A second tarball that contains any patches to the upstream source and additional files created for the package and ends with a name .debian.tar.gz or .diff.gz depending on the distro
+	3. A second tarball that contains any patches to the upstream source and additional files created for the package and ends with a name .debian.tar.gz or .diff.gz depending on the distro.
+
+Chapter 7.5b Source Packages II
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For example on a Ubuntu system, download a source package, then see what files are downloaded or created:
+
+	``apt-get source logrotate``
+	``du -shc logrotate*``
+
+Shows all files, file sizes and total size
