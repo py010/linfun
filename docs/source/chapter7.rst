@@ -42,7 +42,33 @@ Chapter 7.5b Source Packages II
 
 For example on a Ubuntu system, download a source package, then see what files are downloaded or created:
 
-	``apt-get source logrotate``
-	``du -shc logrotate*``
+	1. ``apt-get source logrotate``
+	2. ``du -shc logrotate*``
 
 Shows all files, file sizes and total size
+
+Chapter 7.6 DPKG Queries
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+
++------------+------------------------+
+|     desired action 	  |    cmd    |
++=====================================+
+|List all packages 		  | $ dpkg -l |
++-------------------------+-----------+
+| 						  |           |
++-------------------------+-----------+
+| 						  |           |
++-------------------------+-----------+
+| 						  |           |
++-------------------------+-----------+
+| 						  |           |
++-------------------------+-----------+
+| 						  |           |
++-------------------------+-----------+
+| 						  |           |
++-------------------------+-----------+
+| 						  |           |
++-------------------------+-----------+
+
+
