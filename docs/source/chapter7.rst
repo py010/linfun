@@ -74,9 +74,9 @@ Grid table:
 
 
 .. csv-table:: a title
-   :header: "name", "firstname", "age"
-   :widths: 20, 20, 10
+   :header: "cmd", "desired outcome"
+   :widths: 30, 50
 
-   "Smith", "John", 40
-   "Smith", "John, Junior", 20
+   "dpkg -l", "List all packages installed"
+   "dpkg -L wget", "List files in the wget package"
 
