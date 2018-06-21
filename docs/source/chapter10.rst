@@ -48,4 +48,14 @@ The ``apt-get`` program is the work horse of installing, removing and upgrading 
    "``$ asudo apt-get --purge remove [package]``", "Remove package and its config files"
    "``$ sudo apt-get upgrade``", "Apply all available updates to a package already installed"
    
+Chapter 10.6b Installing/ removing/ upgrading II
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. csv-table:: apt-get 
+   :header: "Query", "desired effect"
+   :widths: 30, 50
+
+   "``$ sudo apt-get dist-upgrade``", "Do a smart upgrade that will do a more thorough dependency resolution"
+   "``$ sudo apt-get autoremove``", "Get rid of any packages not needed anymore such as old Linux kernels"
+   "``$ sudo apt-get clean``", "Clean out cache files and any archived package files that have been installed"
+   
