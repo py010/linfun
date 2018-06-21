@@ -33,3 +33,19 @@ Queries are done using the ``apt-cache`` utility:
    "``$ apt-file search apache2.conf``", "Search the repo for a file name apache2.conf"
    "``$ apt-file list apache2``", "List all files in the apache2 package"
    
+Chapter 10.6a Installing/ removing/ upgrading I
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The ``apt-get`` program is the work horse of installing, removing and upgrading packages.
+
+.. csv-table:: apt-get 
+   :header: "Query", "desired effect"
+   :widths: 30, 50
+
+   "``$ sudo apt-get update``", "Sync the package index with their repo sources"
+   "``$ sudo apt-get install [package]``", "Install new packages or update and already installed package"
+   "``$ sudo apt-get remove [package]``", "Remove a package without removing its config files"
+   "``$ asudo apt-get --purge remove [package]``", "Remove package and its config files"
+   "``$ sudo apt-get upgrade``", "Apply all available updates to a package already installed"
+   
+
