@@ -1,5 +1,5 @@
 Chapter 11. System Monitoring
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=============================
 
 
 Chapter 11.3 Available Monitoring Tools I
@@ -25,7 +25,7 @@ While there are also a number of gui monitoring tools we will  only consider the
    "``$ mpstat``", "Multiple processor usage", "psmisc (or pstree)"
    "``$ iostat``", "CPU utilization and I/O stats", "sysstat"
    "``$ sar``", "Display and collect info abot system activity", "psysstat"
-   "``$ numastat``", "Infoo about NUMA (Non-Uniform Memory Architecture", "numactl"
+   "``$ numastat``", "Info about NUMA (Non-Uniform Memory Architecture)", "numactl"
    "``$ strace``", "Information about all system calls a process makes", "strace"
 
 Chapter 11.3 Available Monitoring Tools III

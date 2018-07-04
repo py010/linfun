@@ -1,5 +1,5 @@
 Chapter 10. APT
-^^^^^^^^^^^^^^^
+===============
 
 For use on Debian-based systems, the APT (Advanced Packaging Tool) set of programs provides a higher level of intelligent services for using the underlying dpkg program, and plays the sam role as yum on Red Hat-based systems. The main utilities are ``apt-get`` and ``apt-cache``. It can automatically resolve dependencies when installing, updating and removing packages. It accesses external software repos synchronizing with them and retrieving and installing software as needed
 
