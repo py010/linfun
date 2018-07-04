@@ -36,6 +36,7 @@ Summary of the main memory and I/O monitoring utility tools:
 							**Memory Monitoring Utilities**
 
 
+
 .. csv-table:: Memory 
    :header: "Utility", "Purpose", "Package"
    :widths: 30, 50, 40
@@ -43,6 +44,9 @@ Summary of the main memory and I/O monitoring utility tools:
    "``$ free``", "Brief summary of memory usage", "procps"
    "``$ vmstat``", "Detailed virtual memory statistics and block I/O, dynamically updated", "procps"
    "``$ pmap``", "Process memory map", "procps"
+
+
+^^^^
 
 
 							**I/O Monitoring Utilities**
