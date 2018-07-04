@@ -106,9 +106,7 @@ What resides in the ``/proc`` psuedo-filesystem:
 
 
 .. image:: https://github.com/py010/linfun/blob/master/docs/source/images/lsprocubuntu.png?raw=true
-   :width: 600px
-   :height: 300px
-   :align: centre
+   
 
 Chapter 11.6.b A survey of /proc II
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
