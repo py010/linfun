@@ -88,3 +88,16 @@ The /proc and /sys psuedo-filesystems contain a lot of information about the sys
 
 These are psuedo-filesystems because they exist totally in memory; if you look at the disk partition when the system is not running, there will be only empty directory which is used as a mount point.
 Furthermore, the information displayed is gathered only when it is looked at; there is no constant or periodic polling to update entries.
+
+
+
+Chapter 11.5 /proc basics
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The ``/proc`` psuedo-filesystem has a long history; it has roots in other *UNIX* operating system variants and originally was developed to display information about processes on the system, each of which has its own subdirectory in ``/proc`` with all important process characteristics available.
+
+Over time, it grew to contain a lot of information about system properties, such as interrupts, memory, networking, etc.
+
+
+.. image:: /images/lsprocubuntu.jpg
+   :width: 40pt
