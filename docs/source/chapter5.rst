@@ -1,5 +1,5 @@
-Chapter 5 Package Management Systems
-====================================
+Chapter 5. PACKAGE MANAGEMENT SYSTEMS
+=====================================
 
 
 Chapter 5.1

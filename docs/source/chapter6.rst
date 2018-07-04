@@ -1,5 +1,5 @@
-Chapter 6 THE RED HAT PACKAGE MANAGER RPM
-=========================================
+Chapter 6. THE RED HAT PACKAGE MANAGER RPM
+==========================================
 
 The Red Hat Package Manager (RPM) is used by a number of major distributions (and their close relatives) to control the installation, verification, upgrade, and removal of software on Linux systems. The low-level rpm program can perform all these operations, either on just one package, or on a list of packages. Operations which would cause problems (such as removing a package that another package depends on, or installing a package when the system needs other software to be installed first) are blocked from completion.
 
