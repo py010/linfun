@@ -12,6 +12,7 @@ SYS ADMIN:
     chapter6
     chapter7
     chapter10
+    chapter11
     revision
     license
     help

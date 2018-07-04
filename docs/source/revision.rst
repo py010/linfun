@@ -1,5 +1,7 @@
 Cmds / notes for exam prep.
 
-To look at:
+redo all labs from course
 
+To look at:
+rpm files
 du, su, dpkg, 
