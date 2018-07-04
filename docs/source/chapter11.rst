@@ -27,3 +27,32 @@ While there are also a number of gui monitoring tools we will  only consider the
    "``$ sar``", "Display and collect info abot system activity", "psysstat"
    "``$ numastat``", "Infoo about NUMA (Non-Uniform Memory Architecture", "numactl"
    "``$ strace``", "Information about all system calls a process makes", "strace"
+
+Chapter 11.3 Available Monitoring Tools III
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Summary of the main memory and I/O monitoring utility tools:
+
+							**Memory Monitoring Utilities**
+
+
+.. csv-table:: Memory 
+   :header: "Utility", "Purpose", "Package"
+   :widths: 30, 50, 40
+
+   "``$ free``", "Brief summary of memory usage", "procps"
+   "``$ vmstat``", "Detailed virtual memory statistics and block I/O, dynamically updated", "procps"
+   "``$ pmap``", "Process memory map", "procps"
+
+
+							**I/O Monitoring Utilities**
+
+
+.. csv-table:: I/O 
+   :header: "Utility", "Purpose", "Package"
+   :widths: 30, 50, 40
+
+   "``$ iostat``", "CPU utilization and I/O statistics", "sysstat"
+   "``$ sar``", "Display and collect information about system activity", "systat"
+   "``$ vmstat``", "Detailed virtual memory statistics and block I/O, dynamically updated", "procps"
+
