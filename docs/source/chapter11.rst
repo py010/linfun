@@ -78,3 +78,13 @@ Chapter 11.3 Available Monitoring Tools IV
    "``$ iptraf``", "Gather information on network interfaces", "iptraf"
    "``$ tcpdump``", "Detailed analysis of network packets and traffic", "tcpdump"
    "``$ wireshark``", "Detailed network traffic statistics", "wireshark"
+
+
+
+Chapter 11.4 The /proc and /sys Psuedo-filesystems
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The /proc and /sys psuedo-filesystems contain a lot of information about the system. Furthermore, many of the entries in these directory trees are writable and can be used to change system behavior; in most cases this requires a root user.
+
+These are psuedo-filesystems because they exist totally in memory; if you look at the disk partition when the system is not running, there will be only empty directory which is used as a mount point.
+Furthermore, the information displayed is gathered only when it is looked at; there is no constant or periodic polling to update entries.
