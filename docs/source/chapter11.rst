@@ -99,5 +99,5 @@ The ``/proc`` psuedo-filesystem has a long history; it has roots in other *UNIX*
 Over time, it grew to contain a lot of information about system properties, such as interrupts, memory, networking, etc.
 
 
-.. image:: /images/lsprocubuntu.jpg
+.. image:: /images/lsprocubuntu.png
    :width: 40pt
