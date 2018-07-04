@@ -106,5 +106,16 @@ What resides in the ``/proc`` psuedo-filesystem:
 
 
 .. image:: https://github.com/py010/linfun/blob/master/docs/source/images/lsprocubuntu.png?raw=true
-   :width: 40px
-   :height: 40px
+   :width: 240px
+   :height: 240px
+
+Chapter 11.6.b A survey of /proc II
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+First is a subdirectory for each process on the system, whether they are running, sleeping or sheduled out.
+
+Here is the display of ``ls -F /proc/3589`` (a random process). 
+
+   The ``-F`` option will display a '/' immediately after each pathname that is a directory, an asterisk '*' after each that is executable, an at sign '@' after each symbolic link, an equals sign '=' after each socket, a percent sign '%' after each whiteout, and a vertical bar'|' after each that is a FIFO
+
+.. image:: https://github.com/py010/linfun/blob/master/docs/source/images/lsproc3589.png?raw=true
