@@ -63,21 +63,18 @@ Summary of the main memory and I/O monitoring utility tools:
 
 
 
-Chapter 11.3.d Available Monitoring Tools IV
+Chapter 11.3 Available Monitoring Tools IV
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 
 
                      **Network Monitoring Utilities**
 
 
-
-.. csv-table:: network 
+.. csv-table:: Network 
    :header: "Utility", "Purpose", "Package"
    :widths: 30, 50, 40
 
-   "``$ netstat``", "Detailed networking stats", "netstat"
+   "``$ netstat``", "Detailed networking statistics", "sysstat"
    "``$ iptraf``", "Gather information on network interfaces", "iptraf"
    "``$ tcpdump``", "Detailed analysis of network packets and traffic", "tcpdump"
-   "``$ wireshark``,"Detailed network traffic analysis", "wireshark"
-
+   "``$ wireshark``", "Detailed network traffic statistics", "wireshark"
