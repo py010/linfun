@@ -72,7 +72,7 @@ Chapter 11.3.d Available Monitoring Tools IV
 
 
 
-.. csv-table:: **network** 
+.. csv-table:: network 
    :header: "Utility", "Purpose", "Package"
    :widths: 30, 50, 40
 
