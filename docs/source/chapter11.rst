@@ -287,3 +287,12 @@ List of the major **sar** options, each one has its own sub-options:
    "``$ -v``", "Statistics about inodes and files and file handles"
    "``$ -w``", "Context switching statistics"
    "``$ -W``", "Swapping statistics, pages in and out per second"
+
+Chapter 11.10.c sar III
+^^^^^^^^^^^^^^^^^^^^^^^
+
+This screenshot demonstrates how to get paging statistics and the I/O transfer rate stats.
+
+.. image:: https://github.com/py010/linfun/blob/master/docs/source/images/sario.png?raw=true
+
+The **ksar** program is a java-based utility for generating nice graphs of **sar** data. It can be downloaded from  http://sourceforge.net/projects/ksar.
