@@ -202,3 +202,9 @@ Viewing the value can be done as a normal user, while changing it requires super
 
 Chapter 11.8 /sys Basics
 ^^^^^^^^^^^^^^^^^^^^^^^^
+
+The /sys pseudo-filesystem is an integral part of what is termed the **Unified Device Model**. Conceptually, it is based on a **device tree** and one can walk through it and see the buses, devices, etc. It also now contains information which may or may not be strictly related to devices, such as kernel modules.
+
+It has a more tightly defined structure than does ``/proc``. Most entries contain only one line of text, although there are exceptions, unlike its antecedent, which has many multi-line entries whose exact contents have been known to change between kernel versions. Thus, the interface is hopefully more stable.
+
+There are system properties which have display entries in both ``/proc`` and ``/sys``; for compatibility with widely used system utilities, the older forms are only gradually being whittled down.
