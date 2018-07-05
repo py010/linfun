@@ -159,8 +159,20 @@ Each of these subdirectories contains information, as well as knobs that can be 
 * ``abi/``
    Contains files with applicatin binary information; rarely used.
 
-* ``debug/
+* ``debug/``
    Debugging parameters; for now, just some control of exception reporting.
 
 * ``dev/``
-   Device parameters, including subdirectories for *cdrom*, *scsi*, *raid*, and *parport*.
+   Device parameters, including subdirectories for **cdrom**, **scsi**, **raid**, and **parport**.
+
+* ``fs/``
+   Filesystem parameters, including quota, file handles used, and maximums, inode and directory information etc.
+
+* ``kernel/``
+   Kernel parameters. Many important entries here.
+
+* ``net/``
+   Network parameters, including subdirectories for **ipv4**, **netfilter**, etc.
+
+* ``vm/``
+   Virtual memory parameters, many important entries here.
