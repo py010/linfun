@@ -141,3 +141,15 @@ Other entries give system wide info. For example, you can see the *interrupt* st
 For each interrupt, we can see what the type is, how many times it has been handled on each CPU and which devices are registered to respond to it. We also get global statistics.
 
 
+
+Chapter 11.7.a /proc/sys I
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Most of the tunable parameters can be found in the subdirectory tree rooted at ``/proc/sys``:
+
+
+.. image:: https://github.com/py010/linfun/blob/master/docs/source/images/procsys.png?raw=true
+
+
+
+
