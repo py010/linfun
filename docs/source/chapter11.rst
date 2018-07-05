@@ -218,6 +218,23 @@ Support for the sysfs virtual filesystem is built into all modern kernels, and i
 Let's take a look at what can be found using the 3.18 kernel; we warn you that the exact layout of this filesystem has a tendency to mutate. Doing a top level directory command yields:
 
 ``$ ls -F /sys``
-``block/ bus/ class/ dev/ devices/ firmware/ fs/ kernel/ module/ power/``
+``block/ bus/ class/ dev/ devices/ firmware/ fs/ kernel/ module/ power/`
 
 which displays the basic device hierarchy. The device model sysfs implementation also includes information not strictly related to hardware.
+
+
+Chapter 11.9.b A Survey of /sys II
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Network device can be examined with:
+
+
+.. image:: https://github.com/py010/linfun/blob/master/docs/source/images/sysclassnet.png?raw=true
+
+
+Chapter 11.9.c A Survey of /sys III
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can view the Ethernet card as shown below, the intention with sysfs is to have one text value per line, although this is not expected to be rigorously enforced.
+
+.. image:: https://github.com/py010/linfun/blob/master/docs/source/images/sysclassnetcard.png?raw=true
