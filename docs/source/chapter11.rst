@@ -24,7 +24,7 @@ While there are also a number of gui monitoring tools we will  only consider the
    "``$ pstree``", "A tree of processes and their connections", "procps"
    "``$ mpstat``", "Multiple processor usage", "psmisc (or pstree)"
    "``$ iostat``", "CPU utilization and I/O stats", "sysstat"
-   "``$ sar``", "Display and collect info abot system activity", "psysstat"
+   "``$ sar``", "Display and collect info about system activity", "psysstat"
    "``$ numastat``", "Info about NUMA (Non-Uniform Memory Architecture)", "numactl"
    "``$ strace``", "Information about all system calls a process makes", "strace"
 
@@ -296,3 +296,37 @@ This screenshot demonstrates how to get paging statistics and the I/O transfer r
 .. image:: https://github.com/py010/linfun/blob/master/docs/source/images/sario.png?raw=true
 
 The **ksar** program is a java-based utility for generating nice graphs of **sar** data. It can be downloaded from  http://sourceforge.net/projects/ksar.
+
+
+CHAPTER 11 KNOWLEDGE CHECK Q&A
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. ___________ is a debug tool that shows how a process makes requests to the operating system.
+   
+   a. ``strace``
+
+2. ___________ is a tool that shows for how long the system is running.
+   
+   a. ``uptime``
+
+3. ___________ is an interactive tool for monitoring process activity.
+
+   a. ``top``
+
+4. ___________ is a tool that displays the summary of memory usage.
+
+   a. ``free``
+
+5. Given a PID such as 1017, the special file __________ contains the command line used to start the process.
+
+   a. ``/proc/[PID NUM]/cmdline``
+
+6. What information that is not related to processes can be found at ``/proc``?
+   a.
+         1. The kernel commandline
+         2. CPU model info
+         3. Memory utilization stats
+         4. Disk Partition info
+
+   a2. Also includes more
+
