@@ -207,4 +207,17 @@ The /sys pseudo-filesystem is an integral part of what is termed the **Unified D
 
 It has a more tightly defined structure than does ``/proc``. Most entries contain only one line of text, although there are exceptions, unlike its antecedent, which has many multi-line entries whose exact contents have been known to change between kernel versions. Thus, the interface is hopefully more stable.
 
-There are system properties which have display entries in both ``/proc`` and ``/sys``; for compatibility with widely used system utilities, the older forms are only gradually being whittled down.
+There are system properties which have display entries in both ``/proc`` and ``/sys`; for compatibility with widely used system utilities, the older forms are only gradually being whittled down.
+
+
+Chapter 11.9.a A Survey of /sys I
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Support for the sysfs virtual filesystem is built into all modern kernels, and it should be mounted under /sys. However, the unified device model does not require mounting sysfs in order to function.
+
+Let's take a look at what can be found using the 3.18 kernel; we warn you that the exact layout of this filesystem has a tendency to mutate. Doing a top level directory command yields:
+
+``$ ls -F /sys``
+``block/ bus/ class/ dev/ devices/ firmware/ fs/ kernel/ module/ power/``
+
+which displays the basic device hierarchy. The device model sysfs implementation also includes information not strictly related to hardware.
