@@ -151,5 +151,16 @@ Most of the tunable parameters can be found in the subdirectory tree rooted at `
 .. image:: https://github.com/py010/linfun/blob/master/docs/source/images/procsys.png?raw=true
 
 
+Chapter 11.7.b /proc/sys II
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Each of these subdirectories contains information, as well as knobs that can be tuned (with care):
 
+* ``abi/``
+   Contains files with applicatin binary information; rarely used.
+
+* ``debug/
+   Debugging parameters; for now, just some control of exception reporting.
+
+* ``dev/``
+   Device parameters, including subdirectories for *cdrom*, *scsi*, *raid*, and *parport*.
