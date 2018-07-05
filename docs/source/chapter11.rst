@@ -176,3 +176,29 @@ Each of these subdirectories contains information, as well as knobs that can be 
 
 * ``vm/``
    Virtual memory parameters, many important entries here.
+
+
+Chapter 11.7.c /proc/sys III
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Viewing and changing the parameters can be done with simple commands, For example, the maximum number of threads allowed on the system can be seen by looking at:
+
+``$ ls - l /proc/sys/kernel/threads-max``
+``$ cat /proc/sys/kernel/threads-max``
+``129498``
+
+We can then modify and verify the change was effected:
+
+``$ sudo bash -c 'echo 100000 > /proc/sys/kernel/threads-max'``
+``$ cat /proc/sys/kernel/threads-max``
+``100000``
+
+Remeber from **sysctl** the same effect is accomplished by:
+
+``$ sudo sysctl kernel.threads-max=100000``
+
+Viewing the value can be done as a normal user, while changing it requires superuser privilege.
+
+
+Chapter 11.8 /sys Basics
+^^^^^^^^^^^^^^^^^^^^^^^^
