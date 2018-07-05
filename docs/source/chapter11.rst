@@ -207,7 +207,7 @@ The /sys pseudo-filesystem is an integral part of what is termed the **Unified D
 
 It has a more tightly defined structure than does ``/proc``. Most entries contain only one line of text, although there are exceptions, unlike its antecedent, which has many multi-line entries whose exact contents have been known to change between kernel versions. Thus, the interface is hopefully more stable.
 
-There are system properties which have display entries in both ``/proc`` and ``/sys``; for compatibility with widely used system utilities, the older forms are only gradually being whittled down.
+There are system properties which have display entries in both ``/proc`` and ``/sys`; for compatibility with widely used system utilities, the older forms are only gradually being whittled down.
 
 
 Chapter 11.9.a A Survey of /sys I
@@ -251,7 +251,7 @@ The underlying device and driver for the first network interface can be traced t
 Chapter 11.10.a sar I
 ^^^^^^^^^^^^^^^^^^^^^
 
-**sar** stands for **S**ystem **A**ctivity **R**eporter. Its an all-purpose tool for gathering system activity and performance data and creating reports readable by humans.
+**sar** stands for System Activity Reporter. Its an all-purpose tool for gathering system activity and performance data and creating reports readable by humans.
 
 On Linux systems, the backend to **sar** is **sadc** (system activity data collector), which actually accumilates the stats. Its stores info in ``/var/log/sa`` directory, with a daily frequency by default, which can be adjusted. Data collection can be started from the command line, and regular periodic collection is usually started as a cron jon stored in ``/etc/cron.d/sysstat``
 
@@ -264,3 +264,26 @@ On Linux systems, the backend to **sar** is **sadc** (system activity data colle
 With no options given a report on CPU usage will be given.
 
 .. image:: https://github.com/py010/linfun/blob/master/docs/source/images/sar.png?raw=true
+
+
+Chapter 11.10.b sar II
+^^^^^^^^^^^^^^^^^^^^^^
+List of the major **sar** options, each one has its own sub-options:
+
+.. csv-table:: sar options 
+   :header: "option", "meaning"
+   :widths: 30, 60
+
+   "``$ -A``", "Almost all information"
+   "``$ -b``", "I/O and transfer rate stats (similar to ``iostat``)"
+   "``$ -B``", "Paging statistics including page faults"
+   "``$ -x``", "Block device activity (similar to ``iostat -x``"
+   "``$ -n``", "Network statistics"
+   "``$ -P``", "Per CPU statistics (as in ``sar -P ALL 3``)
+   "``$ -q``", "Queue lengths"
+   "``$ -r``", "Swap and memory utilization stats"
+   "``$ -R``", "Memory statistics"
+   "``$ -u``", "CPU utilization"
+   "``$ -v``", "Statistics about inodes and files and file handles"
+   "``$ -w``", "Context switching statistics"
+   "``$ -W``", "Swapping statistics, pages in and out per second"
