@@ -247,3 +247,20 @@ The underlying device and driver for the first network interface can be traced t
 
 .. image:: https://github.com/py010/linfun/blob/master/docs/source/images/sysclassnetcarddevice.png?raw=true
 
+
+Chapter 11.10.a sar I
+^^^^^^^^^^^^^^^^^^^^^
+
+**sar** stands for **S**ystem **A**ctivity **R**eporter. Its an all-purpose tool for gathering system activity and performance data and creating reports readable by humans.
+
+On Linux systems, the backend to **sar** is **sadc** (system activity data collector), which actually accumilates the stats. Its stores info in ``/var/log/sa`` directory, with a daily frequency by default, which can be adjusted. Data collection can be started from the command line, and regular periodic collection is usually started as a cron jon stored in ``/etc/cron.d/sysstat``
+
+**sar** then reads in this data and then produces a report.
+
+**sar** is invoked via:
+
+``$ sar [ options ] [ interval ] [ count ]``
+
+With no options given a report on CPU usage will be given.
+
+.. image:: https://github.com/py010/linfun/blob/master/docs/source/images/sar.png?raw=true

@@ -4,4 +4,4 @@ redo all labs from course
 
 To look at:
 rpm files
-du, su, dpkg, 
+du, su, dpkg, sar
