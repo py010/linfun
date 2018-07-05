@@ -27,3 +27,13 @@ CHAPTER 7 KNOWLEDGE CHECK Q&A
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ``dpkg -l`` lists all installed packages on the system
+
+CHAPTER 10 KNOWLEDGE CHECK Q&A
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``apt-get install <package>` is used to install a new package.
+
+``apt-get update` does not accept a package as argument.
+
+``apt-file find <file path>`` can be used to find which package provides the file specified as argument.
+
+``apt-cache search`` can be used for searching on package name and short description.
