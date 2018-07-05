@@ -128,3 +128,16 @@ This directory is full of information about the status of the process and the re
 ie:
 
 .. image:: https://github.com/py010/linfun/blob/master/docs/source/images/procstatus.png?raw=true
+
+
+Chapter 11.6.d A survey of /proc IV
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Other entries give system wide info. For example, you can see the *interrupt* statistics here:
+
+
+.. image:: https://github.com/py010/linfun/blob/master/docs/source/images/procinterrupts.png?raw=true
+
+For each interrupt, we can see what the type is, how many times it has been handled on each CPU and which devices are registered to respond to it. We also get global statistics.
+
+
