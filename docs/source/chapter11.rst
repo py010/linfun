@@ -238,3 +238,12 @@ Chapter 11.9.c A Survey of /sys III
 You can view the Ethernet card as shown below, the intention with sysfs is to have one text value per line, although this is not expected to be rigorously enforced.
 
 .. image:: https://github.com/py010/linfun/blob/master/docs/source/images/sysclassnetcard.png?raw=true
+
+
+Chapter 11.9.c A Survey of /sys IV
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The underlying device and driver for the first network interface can be traced through the **device** and the **driver** *symbolic links*. The screenshot here shows us what we can see when looking at the directory corresponding to the first Ethernet card.
+
+.. image:: https://github.com/py010/linfun/blob/master/docs/source/images/sysclassnetcarddevice.png?raw=true
+
