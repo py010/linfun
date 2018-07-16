@@ -74,4 +74,45 @@ Some common selection options in the UNIX format are:
 	``-U`` 
 		Select by real user ID (also supports names).
 
+Chapter 12.8 Customizing the ps Output
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+If you use the -o option, followed by a comma-separated list of field identifiers, you can print out a customized list of ps fields:
+
+pid: Process ID number
+uid: User ID number
+cmd: Command with all arguments
+cputime: Cumulative CPU time
+pmem: Ratio of the process's resident set size to the physical memory on the machine, expressed as a percentage.
+You can see an example in the screenshot provided. You can consult the ps man page for many other output options.
+
+.. image:: https://github.com/py010/linfun/blob/master/docs/source/images/pself.png?raw=true
+
+
+Chapter 12.9 Using pstree
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+pstree gives a visual description of the process ancestry and multi-threaded applications:
+
+$ pstree -aAp 2408
+
+bash,2408
+|-emacs,24998 pmonitor.tex
+|  |-{emacs},25002
+|  '-{emacs},25003
+|-evince,18036 LFS201-SLIDES.pdf
+|  |-{evince},18040
+|  |-{evince},18046
+|  '-{evince},18047
+
+Consult the man page for pstree for an explanation of many options; in the above we have chosen just to show information for pid=2408.
+
+Note that one of its child processes (evince, pid=18036) has three children of its own. Another way to see that is:
+
+$ ls -l /proc/18036/task 
+
+total 0
+dr-xr-xr-x 5 coop coop 0 Sep 11 07:15 18036
+dr-xr-xr-x 5 coop coop 0 Sep 11 07:15 18040
+dr-xr-xr-x 5 coop coop 0 Sep 11 07:15 18046
+dr-xr-xr-x 5 coop coop 0 Sep 11 07:15 18047
