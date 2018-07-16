@@ -90,7 +90,7 @@ You can see an example in the screenshot provided. You can consult the ps man pa
 
 
 Chapter 12.9 Using pstree
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 pstree gives a visual description of the process ancestry and multi-threaded applications:
 
@@ -116,3 +116,15 @@ dr-xr-xr-x 5 coop coop 0 Sep 11 07:15 18036
 dr-xr-xr-x 5 coop coop 0 Sep 11 07:15 18040
 dr-xr-xr-x 5 coop coop 0 Sep 11 07:15 18046
 dr-xr-xr-x 5 coop coop 0 Sep 11 07:15 18047
+
+
+Chapter 12.10 Viewing System Loads with top
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+When one wants to know what the system is spending its time on, the first tool one often uses is top. The screenshot shows you what you can see when using top without arguments.
+
+.. image:: https://github.com/py010/linfun/blob/master/docs/source/images/top1.png?raw=true
+
+
+By default, top refreshes itself every 3.0 seconds.
