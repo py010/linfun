@@ -69,3 +69,16 @@ CHAPTER 11 KNOWLEDGE CHECK Q&A
          4. Disk Partition info
 
    a2. Also includes more
+
+
+CHAPTER 12 KNOWLEDGE CHECK Q&A
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+3 tools to monitor processes:
+
+``top``, ``ps``, ``pstree`
+
+
+What command will show the parent process IDs (PPIDs) for all the processes on the system?
+
+``ps -elf``

@@ -128,3 +128,26 @@ When one wants to know what the system is spending its time on, the first tool o
 
 
 By default, top refreshes itself every 3.0 seconds.
+
+
+Chapter 12.11 top Options I
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**top** is an ancient utility and has a ton of options, as well as interactive commands triggered when certain keys are pressed. For example, if one hits 1, each CPU is shown separately, and if one hits i only active processes are shown. You can see what doing both gives us in the screenshot.
+
+
+.. image:: https://github.com/py010/linfun/blob/master/docs/source/images/top2.png?raw=true
+
+
+Chapter 12.11 top Options II
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+One has a lot of control over how processes are sorted and which fields are displayed; there are many others besides the defaults. For example, hitting h or ? gives a brief list of interactive commands and q exits. 
+
+Furthermore, one can kill a task by hitting k, or renice it (change its priority) with r.
+
+Doing man top will give you extensive documentation on configuration possibilities, options, and interactive possibilities.
+
+Note that there are popular alternatives to the standard top program, some of which have more visual interfaces and/or additional information, such as htop, ntop and atop. And most Linux distributions have a graphical system monitor (such as gnome-system-monitor or ksysguard) which has a top-like display window that can be shown.
+
+ 
