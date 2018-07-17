@@ -18,3 +18,24 @@ When tweaking parameters in ``/proc/sys/vm``, the usual best practice is to adju
 
 Memory tuning can often be subtle and what works in one system situation or load may be far from optimal in other circumstances.
 
+Chapter 13.4 Memory Monitoring Tools:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. csv-table:: Memory Monitoring 
+   :header: "Utility", "Purpose", "Package"
+   :widths: 30, 50, 40
+
+   "``$ free``", "Brief summary of memory usage", "procps"
+   "``$ vmstat``", "Detailed virtual memory statistics and block I/O, dynamically updated", "procps"
+   "``$ pmap``", "Process memory map", "procps"
+
+
+Chapter 13.5.a ``/proc/sys/vm`` I
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The ``/proc/sys/vm`` directory contains many tunable knobs to control the **Virtual Memory** system. Exactly what appears in this directory will depend somewhat on the kernel version. Almost all of the entries are writable (by **root**).
+
+These values can be changed either by directly writing to the entry, or using the **sysctl** utility. Furthermore, by modifying the ``/etc/sysctl.conf``, values can be set at boot time.
+
+You can find full documentation for the ``/proc/sys/vm`` directory in the kernel source (or kernel documentation package on your distribution), usually under ``Documentation/sysctl/vm.txt``.
+
