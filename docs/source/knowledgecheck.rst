@@ -82,3 +82,20 @@ CHAPTER 12 KNOWLEDGE CHECK Q&A
 What command will show the parent process IDs (PPIDs) for all the processes on the system?
 
 ``ps -elf``
+
+1. Run ps with the options -ef. Then run it again with the options aux. Note the differences in the output.
+
+1. ``$ ps -ef``, `$ ps aux``
+
+
+2. Run ps so that only the process ID, priority, nice value, and the process command line are displayed.
+
+
+3. Start a new bash session by typing bash at the command line. Start another bash session using the nice command 
+but this time giving it a nice value of 10.
+
+4. Run ps as in step 2 to note the differences in priority and nice values. Note the process ID of the two bash sessions.
+
+5. Change the nice value of one of the bash sessions to 15 using renice. Once again, observe the change in priority and nice values.
+
+6. Run top and watch the output as it changes. Hit q to stop the program.

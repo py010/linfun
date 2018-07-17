@@ -14,6 +14,7 @@ SYS ADMIN:
     chapter10
     chapter11
     chapter12
+    chapter13
     knowledgecheck
     revision
     license
