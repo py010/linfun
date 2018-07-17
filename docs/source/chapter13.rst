@@ -57,10 +57,10 @@ Chapter 13.5.b ``/proc/sys/vm`` II (ENTRIES)
 	"dirty_writeback_centisecs", "Interval in which periodic writeback daemons wake up to flush. If set to zero, there is no automatic periodic writeback"
 	"drop_caches", "Echo 1 to free page cache, 2 to free dentry and inode caches, 3 to free all. Note only clean cached pages are dropped; do sync first to flush dirty pages"
 	"extfrag_threshold", "Controls when the kernel should compact memory"
-	"hugepages_treat_as_movable 	Used to toggle how huge pages are treated
-	"hugetlb_shm_group 	Sets a group ID that can be used for System V huge pages
-	"laptop_mode 	Can control a number of features to save power on laptops
-	"legacy_va_layout 	Use old layout (2.4 kernel) for how memory mappings are displayed
+	"hugepages_treat_as_movable", "Used to toggle how huge pages are treated"
+	"hugetlb_shm_group", "Sets a group ID that can be used for System V huge pages"
+	"laptop_mode", "Can control a number of features to save power on laptops"
+	"legacy_va_layout", "Use old layout (2.4 kernel) for how memory mappings are displayed"
 	"lowmen_reserve_ratio", "Controls how much low memory is reserved for pages that can only be there; i.e., pages which can go in high memory instead will do so. Only important on 32-bit systems with high memory"
 	"max_map_count", "Maximum number of memory mapped areas a process may have. The default is 64 K"
 	"min_free_kbytes", 	"Minimum free memory that must be reserved in each zone"
