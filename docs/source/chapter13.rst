@@ -149,7 +149,7 @@ To get a table of disk statistics use the -d option:
 Chapter 13.6.f vmstat VI
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-. csv-table:: vmstat Disk Fields 
+.. csv-table:: vmstat Disk Fields 
    :header: "Field", "Subfield", "Meaning"
    :widths: 30, 50, 40
 
@@ -176,3 +176,8 @@ Chapter 13.7.a /proc/meminfo I
 As noted earlier, a relatively lengthy summary of memory statistics resides in /proc/meminfo:
 
 .. image:: https://github.com/py010/linfun/blob/master/docs/source/images/procmeminfo.png?raw=true
+
+
+Chapter 13.7.b /proc/meminfo II
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
