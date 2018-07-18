@@ -219,4 +219,21 @@ Chapter 13.7.b /proc/meminfo II
    "HugePages_Total", "Total size of the huge page pool"
    "HugePages_Free", "Huge pages that are not yet allocated"
 
-   more available
+Chapter 13.8.a OOM Killer I
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The simplest way to deal with memory pressure would be to permit memory allocations to succedd as long as free memory is available and then fail when all memory is exhausted
+
+The second simplest way is to use the **swap** space on disk to push some of the resident memory out of the core; in this case, the total available memory (in theory) is the actual **RAM** plus the size of the **swap** space. The hard part of this is to figure out which pages of memory to swap out when pressure demands. In this approach, once the swap space itself is filled, requests for new memory must fail.
+
+Linux, however, goes one better: it permits the system to overcommit memory, so that it can grant memory requests that exceed the size of **RAM** plus **swap**. While this might seem foolhardy, many (if not most) processess do not use all the requested memory.
+
+An example would be a program that allocates a 1 MB buffer, and then uses only a few pages of the memory. Another example is that every time a child process is forked, it receives a copy of the entire memory space of the parent. Because Linux uses the COW (copy on write) technique, unless one of the processes modifies memory, no actual copy needs be made. However, the kernel has to assume that the copy might need to be done.
+
+Thus, the kernel permits overcommission of memory, but only for pages dedicated to user processes; pages used within the kernel are not swappable and are always allocated at request time.
+
+One can modify, and even turn off this overcommission by setting the value of ```/proc/sys/vm/overcommit_memory```:
+
+0:  (default) Permit overcommission, but refuse obvious overcommits, and give root users somewhat more memory allocation than normal users.
+1:  All memory requests are allowed to overcommit.
+2:  Turn off overcommission. Memory requests will fail when the total memory commit reaches the size of the swap space plus a configurable percentage (50 by default) of RAM. This factor is modified changing ```/proc/sys/vm/overcommit_ratio```.
