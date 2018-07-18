@@ -232,8 +232,24 @@ An example would be a program that allocates a 1 MB buffer, and then uses only a
 
 Thus, the kernel permits overcommission of memory, but only for pages dedicated to user processes; pages used within the kernel are not swappable and are always allocated at request time.
 
-One can modify, and even turn off this overcommission by setting the value of ```/proc/sys/vm/overcommit_memory```:
+One can modify, and even turn off this overcommission by setting the value of ``/proc/sys/vm/overcommit_memory```:
 
 0:  (default) Permit overcommission, but refuse obvious overcommits, and give root users somewhat more memory allocation than normal users.
 1:  All memory requests are allowed to overcommit.
 2:  Turn off overcommission. Memory requests will fail when the total memory commit reaches the size of the swap space plus a configurable percentage (50 by default) of RAM. This factor is modified changing ```/proc/sys/vm/overcommit_ratio```.
+
+
+Chapter 13.8.a OOM Killer II
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If available memory is exhausted, Linux invokes the OOM-killer (Out Of Memory) to decide which process(es) should be exterminated to open up some memory.
+
+There is no precise science for this; the algorithm must be heuristic and cannot satisfy everyone. In the minds of many developers the purpose of the OOM-killer is to permit a graceful shutdown, rather than be a part of normal operations.
+
+An amusing take on this was given by Andries Brouwer (http://lwn.net/Articles/104185/):
+
+"An aircraft company discovered that it was cheaper to fly its planes with less fuel on board. The planes would be lighter and use less fuel and money was saved. On rare occasions however the amount of fuel was insufficient, and the plane would crash. This problem was solved by the engineers of the company by the development of a special OOF (out-of-fuel) mechanism. In emergency cases a passenger was selected and thrown out of the plane. (When necessary, the procedure was repeated.) A large body of theory was developed and many publications were devoted to the problem of properly selecting the victim to be ejected. Should the victim be chosen at random? Or should one choose the heaviest person? Or the oldest? Should passengers pay in order not to be ejected, so that the victim would be the poorest on board? And if for example the heaviest person was chosen, should there be a special exception in case that was the pilot? Should first class passengers be exempted? Now that the OOF mechanism existed, it would be activated every now and then, and eject passengers even when there was no fuel shortage. The engineers are still studying precisely how this malfunction is caused."
+
+In order to make decisions of who gets sacrificed to keep the system alive, a value called the badness is computed (which can be read from /proc/[pid]/oom_score) for each process on the system and the order of the killing is determined by this value.
+
+Two entries in the same directory can be used to promote or demote the likelihood of extermination. The value of oom_adj is the number of bits the points should be adjusted by. Normal users can only increase the badness; a decrease (a negative value for oom_adj) can only be specified by a superuser. The value of oom_adj_score directly adjusts the point value. Note that the use of oom_adj is deprecated.
