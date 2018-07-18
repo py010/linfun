@@ -161,4 +161,18 @@ Chapter 13.6.f vmstat VI
    "writes", "ms", "Ms spent writing"
    "I/O", "cur", "I/O in progress"
    "I/O", "sec", "seconds spent for I/O"
-   
+ 
+
+Chapter 13.6.g vmstat VII
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you just want to get some quick statistics on only one partition, use the -p option:
+
+.. image:: https://github.com/py010/linfun/blob/master/docs/source/images/vmstatp.png?raw=true
+
+
+Chapter 13.7.a /proc/meminfo I
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+As noted earlier, a relatively lengthy summary of memory statistics resides in /proc/meminfo:
+
+.. image:: https://github.com/py010/linfun/blob/master/docs/source/images/procmeminfo.png?raw=true
