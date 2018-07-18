@@ -181,3 +181,28 @@ As noted earlier, a relatively lengthy summary of memory statistics resides in /
 Chapter 13.7.b /proc/meminfo II
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. csv-table:: /proc/meminfo Entries
+   :header: "Entry", "Meaning"
+   :widths: 30, 50
+
+   "MemTotal", "Total usable RAM"
+   "MemFree", "Free mem in both low and high zones"
+   "Buffers", "Mem used for temporary block I/O storage"
+   "Cached", "Page cache memory, mostly for file I/O"
+   "SwapCached", "Memory that was swapped back in but is still in the swap file"
+   "Active", "Recently used mem"
+   "Inactive", "Memory not recently used, for eligible for reclamation"
+   "Active(anon)", "Active mem for anonymous pages"
+   "Inactive(anon)", "Inactive mem for anonymous pages"
+   "Active(file)", "Active memory for file-backed pages"
+   "Inactive(file)", "inactive memory for file-backed pages"
+   "Unevictable", "Pages which can not be swapped out of memory or released"
+   "Mlocked", "Pages which are locked in memory"
+   "SwapTotal", "Total swap space available"
+   "SwapFree", "Swap space not being used"
+   "Dirty", "sec", "seconds spent for I/O"
+   "Writeback", "cur", "I/O in progress"
+   "AnonPages", "sec", "seconds spent for I/O"
+   "Mapped",""
+
+   more available
