@@ -96,7 +96,7 @@ If **delay** is given in seconds, the report is repeated at that interval count 
 .. image:: https://github.com/py010/linfun/blob/master/docs/source/images/vmstat.png?raw=true
 
 
-Chapter 13.6.a vmstat II
+Chapter 13.6.b vmstat II
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. csv-table:: Available Tools 
@@ -119,3 +119,15 @@ Chapter 13.6.a vmstat II
    "CPU", "sy", "CPU time running kernel code"
    "CPU", "id", "CPU time idle"
    "CPU", "wa", "Time waiting for I/O"
+
+Chapter 13.6.c vmstat III
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If the option ```-S m``` is given, memory stats will be given in MB instead of KB.
+
+With the option ```-a``, ***vmstat*** displays information about active and inactive memory, where active memory pages are thos which have been recently used; they may be **clean** (disk contents are up to date) or **dirty** (need to be flushed to disk eventually). By contrast, inactive memory pages have not been recently used and are more likely to be cleanand releasr sooner under memory pressure:
+
+```$ vmstat -a 2 4```
+
+.. image:: https://github.com/py010/linfun/blob/master/docs/source/images/vmstata.png?raw=true
+
