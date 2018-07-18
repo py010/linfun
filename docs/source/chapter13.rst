@@ -77,7 +77,10 @@ Chapter 13.5.b ``/proc/sys/vm`` II (ENTRIES)
 	"panic_on_oom", "Enable system to crash on an out of memory situation"
 	"percpu_pagelist_fraction",	"Fraction of pages allocated for each cpu in each zone for hot-pluggable CPU machines"
 	"scan_unevictable_pages", "If written to, system will scan and try to move pages to try and make them reclaimable"
-	"stat_interval", "How often vm statistics are updated (default 1 second) by vmstat
-	swappiness	How aggressively should the kernel swap"
+	"stat_interval", "How often vm statistics are updated (default 1 second) by vmstat swappiness, How aggressively should the kernel swap"
 	"user_reserve_kbytes", "If overcommit_memory is set to 2 this sets how low the user can draw memory resources"
 	"vfs_cache_pressure", "How aggressively the kernel should reclaim memory used for inode and dentry cache. Default is 100; if 0 this memory is never reclaimed due to memory pressure"
+
+
+Chapter 13.6.a vmstat I
+^^^^^^^^^^^^^^^^^^^^^^^
