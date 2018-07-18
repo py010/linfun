@@ -94,3 +94,28 @@ If **delay** is given in seconds, the report is repeated at that interval count 
 ```vmstat 2 4```
 
 .. image:: https://github.com/py010/linfun/blob/master/docs/source/images/vmstat.png?raw=true
+
+
+Chapter 13.6.a vmstat II
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. csv-table:: Available Tools 
+   :header: "Field", "Subfield", "Meaning"
+   :widths: 30, 50, 40
+
+   "Processes", "r", "Number of processes waiting to be scheduled in"
+   "Processes", "b", "Number of processess in uninterruptible sleep"
+   "memory", "swpd", "Virtual memory used (KB)"
+   "memory", "free", "Free, idle memory"
+   "memory", "buff", "Buffer memory"
+   "swap", "si", "Memory swapped in"
+   "swap", "so", "Memory swapped out"
+   "I/O", "Display and collect info about system activity", "psysstat"
+   "I/O", "Info about NUMA (Non-Uniform Memory Architecture)", "numactl"
+   "system", "in", "interupts/second"
+   "system", "cs", "Context switches/second"
+   "CPU", "st", "Time stolen from vm %"
+   "CPU", "us", "CPU time running user code %"
+   "CPU", "sy", "CPU time running kernel code"
+   "CPU", "id", "CPU time idle"
+   "CPU", "wa", "Time waiting for I/O"
