@@ -84,3 +84,13 @@ Chapter 13.5.b ``/proc/sys/vm`` II (ENTRIES)
 
 Chapter 13.6.a vmstat I
 ^^^^^^^^^^^^^^^^^^^^^^^
+
+```vmstat`` is a multi-purpose tool that displays information about memory, paging, I/O, processor activity and processes. It has many options. The general form of the command is:
+
+```$ vmstat [options] [delay] [count]```
+
+If **delay** is given in seconds, the report is repeated at that interval count times; if **count** is not given **vmstat** will keep reporting statistics forever until it is killed such as Ctl-C.
+
+```vmstat 2 4```
+
+.. image:: https://github.com/py010/linfun/blob/master/docs/source/images/vmstat.png?raw=true
