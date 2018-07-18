@@ -131,3 +131,34 @@ With the option ```-a``, ***vmstat*** displays information about active and inac
 
 .. image:: https://github.com/py010/linfun/blob/master/docs/source/images/vmstata.png?raw=true
 
+Chapter 13.6.d vmstat IV
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+To get a table of memory statistics and certain event counters use the -s option:
+
+.. image:: https://github.com/py010/linfun/blob/master/docs/source/images/vmstats.png?raw=true
+
+Chapter 13.6.e vmstat V
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+To get a table of disk statistics use the -d option:
+
+.. image:: https://github.com/py010/linfun/blob/master/docs/source/images/vmstatd.png?raw=true
+
+
+Chapter 13.6.f vmstat VI
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+. csv-table:: vmstat Disk Fields 
+   :header: "Field", "Subfield", "Meaning"
+   :widths: 30, 50, 40
+
+   "reads", "total", "Total reads completed successfully"
+   "reads", "merged", "Grouped reads - resulting in one I/O"
+   "reads", "ms", "Milliseconds spent reading"
+   "writes", "total", "Total writes completed successfully"
+   "writes", "merged", "Grouped writes"
+   "writes", "ms", "Ms spent writing"
+   "I/O", "cur", "I/O in progress"
+   "I/O", "sec", "seconds spent for I/O"
+   
